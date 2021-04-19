@@ -1,0 +1,266 @@
+.site__header {
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+
+.header__bg-img {
+	position: absolute;
+	z-index: 10;
+}
+
+.header__branch1 {
+	top: 180px;
+	left: -10px;
+}
+
+.header__branch2 {
+	top: -50px;
+	right: -100px;
+}
+
+.header__watermellon1 {
+	width: 190px;
+	transform: rotate(140deg);
+	top: -10px;
+	left: 190px;
+}
+
+.header__watermellon2 {
+	width: 140px;
+	transform: rotate(140deg);
+	top: 500px;
+	right: 30px;
+}
+
+.header__orange1 {
+	width: 90px;
+	top: 224px;
+	left: 150px;
+	z-index: 5;
+}
+
+.header__orange2 {
+	width: 90px;
+	right: 330px;
+	top: -32px;
+	z-index: 5;
+}
+
+.header__orange3 {
+	width: 90px;
+	right: 50px;
+	top: 230px;
+}
+
+.header__content {
+	width: 745px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+
+.header__boot {
+	position: absolute;
+	z-index: -1;
+}
+
+.header__boot1 {
+	top: 200px;
+	right: -530px;
+}
+
+.header__boot2 {
+	right: -280px;
+	bottom: -80px;
+}
+
+.header__girl {
+	position: absolute;
+	bottom: -270px;
+	left: -200px;
+	z-index: 20;
+}
+
+.sale {
+	position: absolute;
+	width: 310px;
+	height: 190px;
+	background-image: url("../img/sale.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	transform: rotate(-30deg);
+	padding-right: 35px;
+	bottom: -30px;
+	right: -520px;
+	span {
+		font-family: La unica;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 72px;
+		line-height: 190px;
+		// width: 100%;
+		/* identical to box height */
+		color: #FFFFFF;
+		transform: rotate(30deg);
+	}
+}
+
+.site__title-wrapper {
+	width: 100%;
+	height: 195px;
+	margin-top: 60px;
+	background-image: url("../img/site-title.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 88px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.header__subtitle-wrapper {
+	width: 687px;
+	height: 119px;
+	background-image: url("../img/title-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 14px;
+	margin-top: -60px;
+	margin-bottom: 70px;
+}
+
+.header__subtitle {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 59px;
+	color: #FFFFFF;
+}
+
+.header__price {
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-left: 20px;
+}
+
+.price {
+	width: 100%;
+	height: auto;
+	margin-bottom: 12px;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.old__price {
+	font-family: "Bebas Neue";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 43px;
+	color: #FFFFFF;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.old__price:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	transform: translateY(-50%);
+	background-color: #F06271;
+}
+
+.new__price {
+	font-family: "Bebas Neue";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 64px;
+	color: #F06271;
+	text-transform: uppercase;
+}
+
+.header__sale-btn {
+	width: 300px;
+	height: 80px;
+	display: inline-block;
+	background: #E06D86;
+	border-radius: 30px;
+	font-family: "Bebas Neue";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 80px;
+	color: #FFFFFF;
+	text-align: center;
+	transition: 1s ease;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.header__sale-btn:before {
+	content: "";
+	position: absolute;
+	width: 91px;
+	height: 91px;
+	top: -6px;
+	left: -60px;
+	background-image: url("../img/orange.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: all 1s ease;
+}
+
+.header__sale-btn:hover {
+	transform: translateX(-50px);
+	&:before {
+		transform: translateX(330px) rotate(720deg);
+	}
+}
+
+.time {
+	width: 100%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #1C7270;
+	span {
+		font-weight: 600;
+	}
+}

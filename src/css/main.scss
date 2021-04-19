@@ -1,0 +1,51 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
+p {
+	width: 100%;
+	word-wrap: wrap;
+}
+
+a, button {
+	outline: none;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: normal;
+	background: #9DE7DE;
+}
+
+.site__wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	overflow: hidden;
+	// background-color: #EF7F0F;
+}
+
+.container {
+	width: 1140px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
