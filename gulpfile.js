@@ -7,15 +7,12 @@ const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 
 const styleFiles = [
-	"./src/css/color.scss",
 	"./src/css/main.scss",
 	"./src/css/header.scss",
 	"./src/css/fonts.scss",
 	"./src/css/first-section.scss",
 	"./src/css/second-section.scss",
-	"./src/css/reviews.scss",
 	"./src/css/footer.scss",
-	"./src/css/sliders.scss",
 	"./src/css/modal.scss",
 	"./src/css/adaptive.scss",
 ];
