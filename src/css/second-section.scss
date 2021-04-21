@@ -5,57 +5,63 @@
 
 .card__section {
 	width: 100%;
-	height: 1774px;
+	height: auto;
 	background-color: #2FC4B2;
+}
+
+.card__section-wrapper {
+	width: 1194px;
+	height: 1774px;
 	position: relative;
 	padding-top: 60px;
+	margin: auto;
 }
 
 .card__branch-img1 {
 	position: absolute;
 	top: 120px;
-	left: 110px;
+	left: -250px;
 }
 
 .card__branch-img2 {
 	position: absolute;
-	left: 0;
+	left: -360px;
 	bottom: 520px;
 }
 
 .card__branch-img3 {
 	position: absolute;
-	top: 360px;
-	right: 85px;
+	top: 30px;
+	right: -280px;
 	z-index: 5;
 	
 }
 
 .card__branch-img4 {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 60px;
+	right: -365px;
 }
 
 .card__wattermellon-img1 {
 	position: absolute;
 	top: 540px;
 	width: 260px;
-	left: 50px;
+	left: -310px;
 }
 
 .card__wattermellon-img2 {
 	position: absolute;
 	top: 180px;
-	right: 70px;
+	right: -295px;
 	width: 120px;
 	transform: rotate(-50deg);
 }
 
 .card__wattermellon-img3 {
 	position: absolute;
-	right: 0;
-	bottom: 80px;
+	right: -365px;
+	bottom: 140px;
 	width: 230px;
 	transform: rotate(-140deg);
 }
@@ -63,20 +69,19 @@
 .card__orange-img1 {
 	position: absolute;
 	width: 345px;
-	left: -12px;
+	left: -372px;
 	bottom: 100px;
 }
 
 .card__orange-img2 {
 	position: absolute;
-	right: -50px;
+	right: -415px;
 	top: 520px;
 }
 
 .card {
-	width: 1194px;
+	width: 100%;
 	height: 507px;
-	margin: auto;
 	margin-bottom: 70px;
 	display: flex;
 	justify-content: space-between;
@@ -128,6 +133,7 @@
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
+	text-align: right;
 }
 
 .card__price {
@@ -244,12 +250,12 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 .card__size-btns {
 	width: 280px;
-	height: 90px;
+	height: 100px;
 	margin-bottom: 14px;
 	display: flex;
 }
@@ -295,8 +301,10 @@
 	line-height: 20px;
 	color: #FDC93C;
 	position: absolute;
-	top: 50px;
+	width: 80px;
+	top: 75px;
 	left: 50%;
+	text-align: right;
 	transform: translateX(-50%) rotate(-90deg);
 	transition: 0.3s ease;
 	opacity: 0;
@@ -435,6 +443,7 @@
 	}
 	.header__sale-btn:hover {
 		transform: translateX(-20px);
+		background-color: #C63449;
 		&:before {
 			transform: translateX(255px) rotate(720deg);
 		}
@@ -444,6 +453,15 @@
 		font-size: 16px;
 		line-height: 20px;
 		color: #FFFFFF;
+	}
+	.sales {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+		span {
+			font-weight: 600;
+		}
 	}
 }
 
@@ -507,9 +525,10 @@
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 32px;
 	line-height: 44px;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .sprey__subtitle-wrapper {
@@ -675,7 +694,7 @@
 .review__slider {
 	width: calc(100% + 48px);
 	height: 303px;
-	margin: auto;
+	margin-right: -24px;
 }
 
 .review {
@@ -696,9 +715,9 @@
 	background-image: url("../img/review-wattermellon.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: left -3px top;
 	position: absolute;
-	top: -85px;
+	top: -90px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -722,7 +741,7 @@
 	line-height: 20px;
 	text-align: center;
 	color: #FFFFFF;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-bottom: 10px;
 }
 
@@ -762,4 +781,17 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: underline;
+	color: #000000;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.add__review:hover {
+	color: #444;
 }

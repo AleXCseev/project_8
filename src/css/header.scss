@@ -11,45 +11,45 @@
 
 .header__branch1 {
 	top: 180px;
-	left: -10px;
+	left: -400px;
 }
 
 .header__branch2 {
 	top: -50px;
-	right: -100px;
+	right: -800px;
 }
 
 .header__watermellon1 {
 	width: 190px;
 	transform: rotate(140deg);
 	top: -10px;
-	left: 190px;
+	left: -200px;
 }
 
 .header__watermellon2 {
 	width: 140px;
 	transform: rotate(140deg);
 	top: 500px;
-	right: 30px;
+	right: -670px;
 }
 
 .header__orange1 {
 	width: 90px;
 	top: 224px;
-	left: 150px;
+	left: -240px;
 	z-index: 5;
 }
 
 .header__orange2 {
 	width: 90px;
-	right: 330px;
+	right: -370px;
 	top: -32px;
 	z-index: 5;
 }
 
 .header__orange3 {
 	width: 90px;
-	right: 50px;
+	right: -650px;
 	top: 230px;
 }
 
@@ -75,7 +75,7 @@
 
 .header__boot2 {
 	right: -280px;
-	bottom: -80px;
+	top: 430px;
 }
 
 .header__girl {
@@ -135,6 +135,7 @@
 	display: flex;
 	align-items: center;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .header__subtitle-wrapper {
@@ -159,6 +160,7 @@
 	font-size: 48px;
 	line-height: 59px;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .header__price {
@@ -246,6 +248,7 @@
 
 .header__sale-btn:hover {
 	transform: translateX(-50px);
+	background-color: #2FC4B2;
 	&:before {
 		transform: translateX(330px) rotate(720deg);
 	}
