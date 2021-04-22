@@ -9,7 +9,47 @@ $(function () {
 		dots: true,
 		autoplay: true,
   		autoplaySpeed: 5000,
+		  responsive: [
+			{
+			  breakpoint: 1200,
+			  settings: {
+				slidesToShow: 2,
+			  }
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+				  slidesToShow: 1,
+				}
+			}
+		  ]
 	});
+
+	if($(document).width() <= 660) {
+		$(".advantage__slider").slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			arrows: false,
+			autoplay: true,
+  			autoplaySpeed: 2000,
+		});
+	}
+
+	if($(document).width() <= 700) {
+		$(".galary").slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			arrows: false,
+			// autoplay: true,
+  			autoplaySpeed: 2000,
+			adaptiveHeight: true
+		});
+	}
+	
 	
 	function cardSliderInit (selector) {
 		$(selector + ' .card__slider').slick({
@@ -34,14 +74,14 @@ $(function () {
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 600) {
-			fixedOffset = 200;
+			fixedOffset = -140;
 		}
-		if ($(document).width() <= 440) {
-			fixedOffset = 300;
-		}
-		if ($(document).width() <= 320) {
-			fixedOffset = 400;
-		}
+		// if ($(document).width() <= 440) {
+		// 	fixedOffset = 300;
+		// }
+		// if ($(document).width() <= 320) {
+		// 	fixedOffset = 400;
+		// }
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);

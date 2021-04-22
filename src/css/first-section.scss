@@ -263,6 +263,7 @@ main {
 	position: absolute;
 	top: -40px;
 	right: -40px;
+	z-index: 10000;
 }
 
 .video {
@@ -274,9 +275,12 @@ main {
 	background-position: center;
 	cursor: pointer;
 	transition: 0.3s ease;
+	// pointer-events: none;
 	iframe {
 		width: 100%;
 		height: 100%;
+		position: relative;
+		z-index: 1000;
 	}
 }
 
@@ -343,6 +347,8 @@ main {
 		height: 100%;
 	}
 	img {
+		width: 265px;
+		height: auto;
 		pointer-events: auto;
 	}
 	&:before {
@@ -373,6 +379,10 @@ main {
 .galary__foto-big {
 	width: 560px;
 	height: 400px;
+	img {
+		width: 560px;
+		height: auto;
+	}
 }
 
 .galary__branch {

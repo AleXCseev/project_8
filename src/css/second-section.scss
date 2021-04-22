@@ -19,40 +19,44 @@
 
 .card__branch-img1 {
 	position: absolute;
-	top: 120px;
+	top: 70px;
 	left: -250px;
+	z-index: -1;
 }
 
 .card__branch-img2 {
 	position: absolute;
 	left: -360px;
-	bottom: 520px;
+	top: 80px;
+	z-index: -1;
 }
 
 .card__branch-img3 {
 	position: absolute;
-	top: 30px;
+	top: -260px;
 	right: -280px;
 	z-index: 5;
+	z-index: -1;
 	
 }
 
 .card__branch-img4 {
 	position: absolute;
-	bottom: 60px;
+	top: 20px;
 	right: -365px;
+	z-index: -1;
 }
 
 .card__wattermellon-img1 {
 	position: absolute;
-	top: 540px;
+	top: -80px;
 	width: 260px;
 	left: -310px;
 }
 
 .card__wattermellon-img2 {
 	position: absolute;
-	top: 180px;
+	top: 130px;
 	right: -295px;
 	width: 120px;
 	transform: rotate(-50deg);
@@ -61,7 +65,7 @@
 .card__wattermellon-img3 {
 	position: absolute;
 	right: -365px;
-	bottom: 140px;
+	top: 220px;
 	width: 230px;
 	transform: rotate(-140deg);
 }
@@ -76,7 +80,8 @@
 .card__orange-img2 {
 	position: absolute;
 	right: -415px;
-	top: 520px;
+	top: -80px;
+	z-index: -2;
 }
 
 .card {
@@ -87,6 +92,10 @@
 	justify-content: space-between;
 	position: relative;
 	z-index: 10;
+}
+
+.card__1 {
+	z-index: 1000;
 }
 
 .card__left {
@@ -190,6 +199,7 @@
 .card__img {
 	position: absolute;
 	max-height: 306px;
+	max-width: 421px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -434,6 +444,7 @@
 		margin-left: 13px;
 		color: #FFFFFF;
 		margin-top: 14px;
+		margin-left: 20px;
 		&:before {
 			width: 60px;
 			height: 60px;
@@ -471,9 +482,9 @@
 
 .galary__section-2 {
 	width: 100%;
-	height: 940px;
+	height: auto;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 60px;
 	.container {
 		height: 100%;
 	}
@@ -483,12 +494,11 @@
 		align-items: center;
 	}
 	.galary__branch3 {
-		top: 15px;
+		top: -40px;
 		right: -270px
 	}
-	
 	.galary__branch4 {
-		top: 10px;
+		top: -50px;
 		left: -270px
 	}
 }
