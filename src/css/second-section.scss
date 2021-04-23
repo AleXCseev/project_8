@@ -167,7 +167,6 @@
 	position: relative;
 }
 
-
 .card__title {
 	font-family: Montserrat;
 	font-style: normal;
@@ -289,10 +288,8 @@
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	line-height: 100%;
+	display: inline-block;
 	text-align: center;
 	color: #FDC93C;
 }
@@ -384,8 +381,8 @@
 }
 
 .card__color-btn:before {
-	width: 12px;
-	height: 12px;
+	width: 14px;
+	height: 14px;
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -393,11 +390,12 @@
 	transform: translate(-50%, -50%);
 	transition: 0.3s ease;
 	background-image: url("../img/ok.png");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 10;
 }
 
 .card__color-btn.active {
