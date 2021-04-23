@@ -24,6 +24,7 @@
 	transform: rotate(140deg);
 	top: -10px;
 	left: -200px;
+	animation: mellonanim 5s infinite;
 }
 
 .header__watermellon2 {
@@ -31,6 +32,17 @@
 	transform: rotate(140deg);
 	top: 500px;
 	right: -670px;
+	animation: mellonanim 5s infinite;
+	animation-delay: 2s;
+}
+
+@keyframes mellonanim {
+	50% {
+		transform: rotate(140deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(140deg) scale(1);
+	}
 }
 
 .header__orange1 {
@@ -38,6 +50,8 @@
 	top: 224px;
 	left: -240px;
 	z-index: 5;
+	animation: orangeanim 5s infinite;
+	animation-delay: 1s;
 }
 
 .header__orange2 {
@@ -45,12 +59,25 @@
 	right: -370px;
 	top: -32px;
 	z-index: 5;
+	animation: orangeanim 5s infinite;
+	// animation-delay: 300;
 }
 
 .header__orange3 {
 	width: 90px;
 	right: -650px;
 	top: 230px;
+	animation: orangeanim 5s infinite;
+	animation-delay: 2s;
+}
+
+@keyframes orangeanim {
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: none;
+	}
 }
 
 .header__content {
@@ -71,11 +98,22 @@
 .header__boot1 {
 	top: 200px;
 	right: -530px;
+	animation: boot 3s;
 }
 
 .header__boot2 {
 	right: -280px;
 	top: 430px;
+	animation: boot 2s;
+}
+
+@keyframes boot {
+	0% {
+		transform: translate(3000px);
+	}
+	100% {
+		transform: none;
+	}
 }
 
 .header__girl {
@@ -110,6 +148,19 @@
 		/* identical to box height */
 		color: #FFFFFF;
 		transform: rotate(30deg);
+	}
+}
+
+.site__header .sale {
+	animation: sale 10s infinite;
+}
+
+@keyframes sale {
+	30% {
+		transform: rotate(-30deg) scale(1.2);
+	}
+	60% {
+		transform: rotate(-30deg);
 	}
 }
 

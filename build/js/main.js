@@ -17,7 +17,7 @@ $(function () {
 			  }
 			},
 			{
-				breakpoint: 1200,
+				breakpoint: 700,
 				settings: {
 				  slidesToShow: 1,
 				}
@@ -44,7 +44,6 @@ $(function () {
 			infinite: true,
 			speed: 500,
 			arrows: false,
-			// autoplay: true,
   			autoplaySpeed: 2000,
 			adaptiveHeight: true
 		});
@@ -58,6 +57,8 @@ $(function () {
 			speed: 500,
 			fade: true,
 			cssEase: 'linear',
+			autoplay: true,
+  			autoplaySpeed: 5000,
 			prevArrow: $(selector + " .btn__prev"),
 			nextArrow: $(selector + " .btn__next"),
 		});
@@ -76,12 +77,6 @@ $(function () {
 		if ($(document).width() <= 600) {
 			fixedOffset = -140;
 		}
-		// if ($(document).width() <= 440) {
-		// 	fixedOffset = 300;
-		// }
-		// if ($(document).width() <= 320) {
-		// 	fixedOffset = 400;
-		// }
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
@@ -247,4 +242,32 @@ $(function () {
 
 	galary(".card__1")
 	galary(".card__2")
+
+
+	// var banner = $(".site__header");
+    // var imgs = $(".animate");
+	// // /////////////////////////////////////////////////////////////
+	// function showAllObjects (object) {
+	// 		object.fadeIn(900);
+	// }
+	// // /////////////////////////////////////////////////////////////
+	// function moving (object, speed) {
+	// 	banner.on('mousemove', function(event) {
+	// 		var X = Math.floor((event.pageX)/speed-20) + "px";
+	// 		var Y = Math.floor((event.pageY)/speed) + "px";	
+	// 		object.css('transform', 'translate('+X+' , '+Y+')');
+	// 	});
+	// }
+	// // /////////////////////////////////////////////////////////////
+	// function moveAll (object) {
+	// 	moving($(object[0]),60);
+	// 	moving($(object[1]),62);
+	// 	moving($(object[2]),68);
+	// 	moving($(object[3]),60);
+	// 	moving($(object[4]),80);	
+	// }
+	// // /////////////////////////////////////////////////////////////
+	// showAllObjects(imgs);
+	// moveAll(imgs);
+	// // ////////////
 })

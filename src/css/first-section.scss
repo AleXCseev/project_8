@@ -58,6 +58,12 @@ main {
 	transform: rotate(-55deg);
 }
 
+@keyframes advanim {
+	50% {
+		width: 160px;
+	}
+}
+
 .advantage__title-wrapper {
 	width: 687px;
 	height: 119px;

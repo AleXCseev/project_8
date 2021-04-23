@@ -53,6 +53,8 @@
 	margin-top: 110px;
 	margin-left: -70px;
 	align-self: flex-start;
+	position: relative;
+	z-index: 100;
 }
 
 .footer__title {
@@ -89,9 +91,19 @@
 		position: static;
 		margin-bottom: 16px;
 		margin-top: 10px;
+		animation: footersale 10s infinite;
 		span {
 			transform: none;
 		}
+	}
+}
+
+@keyframes footersale {
+	30% {
+		transform: scale(1.2);
+	}
+	60% {
+		transform: none;
 	}
 }
 
@@ -103,6 +115,8 @@
 	line-height: 20px;
 	color: #174241;
 	margin-bottom: 20px;
+	word-wrap: wrap;
+	text-align: center;
 }
 
 .itcreative-link {
